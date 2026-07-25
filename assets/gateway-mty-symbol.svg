@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Símbolo de GATEWAY MTY</title>
+  <defs>
+    <linearGradient id="gateway-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087EFF"/>
+      <stop offset="1" stop-color="#11D7E5"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#071426"/>
+  <g transform="translate(60 110)" fill="none" stroke="url(#gateway-gradient)" stroke-width="24" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M20 146H94L142 110H235L283 146H372"/>
+    <path d="M142 110V20L260 72V164L142 216V110"/>
+    <circle cx="10" cy="146" r="11"/>
+    <circle cx="382" cy="146" r="11"/>
+  </g>
+</svg>
