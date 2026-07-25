@@ -1,17 +1,17 @@
 # GATEWAY MTY — Sitio web
 
-Primera versión funcional del sitio de GATEWAY MTY.
+Sitio oficial de GATEWAY MTY: infraestructura en redes, videovigilancia, conectividad, cableado estructurado, WiFi y tecnología empresarial.
 
 ## Estado
 
-Versión local para revisión. No publicada.
+Versión inicial lista para conectar con Cloudflare Pages. Aún no publicada en `gatewaymty.mx`.
 
 ## Contenido
 
 - Página principal responsiva
 - Soluciones y sectores
 - Metodología
-- Formulario de cotización preparado para Formspree, con respaldo por correo y WhatsApp
+- Formulario de cotización conectado a Formspree, con respaldo por correo y WhatsApp
 - Aviso de privacidad inicial
 - Página 404
 - Archivo para buscadores (`robots.txt`) y mapa del sitio (`sitemap.xml`)
@@ -20,7 +20,6 @@ Versión local para revisión. No publicada.
 ## Pendiente antes de publicar
 
 - Validar el contenido legal
-- Realizar una prueba real del formulario de cotización y confirmar la llegada al correo de ventas.
 - Añadir fotografías reales de proyectos autorizados
 - Conectar Cloudflare Pages
 - Verificar SEO, rendimiento y accesibilidad en producción
