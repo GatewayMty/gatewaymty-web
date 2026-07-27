@@ -109,49 +109,49 @@
           <p>Integramos las tecnologías adecuadas para resolver las necesidades reales de cada entorno.</p>
         </div>
         <div class="solutions-grid">
-          <article class="solution-card">
+          <article class="solution-card" data-image="assets/services/redes.webp">
             <span class="card-number">01</span>
             <h3>Redes</h3>
             <p>Diseño, implementación y optimización de redes cableadas e inalámbricas.</p>
             <ul><li>Switching y routing</li><li>VLAN y segmentación</li><li>Redes administradas</li></ul>
           </article>
-          <article class="solution-card">
+          <article class="solution-card" data-image="assets/services/conectividad.webp">
             <span class="card-number">02</span>
             <h3>Conectividad</h3>
             <p>Cobertura estable para hogares, comercios y entornos empresariales.</p>
             <ul><li>WiFi profesional</li><li>Enlaces inalámbricos</li><li>Optimización de cobertura</li></ul>
           </article>
-          <article class="solution-card">
+          <article class="solution-card" data-image="assets/services/videovigilancia.webp">
             <span class="card-number">03</span>
             <h3>Videovigilancia</h3>
             <p>Sistemas de monitoreo adaptados al nivel de protección y operación requerido.</p>
             <ul><li>Videovigilancia IP</li><li>Grabación y monitoreo</li><li>Acceso remoto</li></ul>
           </article>
-          <article class="solution-card">
+          <article class="solution-card" data-image="assets/services/seguridad.webp">
             <span class="card-number">04</span>
             <h3>Seguridad</h3>
             <p>Protección perimetral y lógica para reducir riesgos en la infraestructura.</p>
             <ul><li>Firewalls y VPN</li><li>Segmentación</li><li>Protección perimetral</li></ul>
           </article>
-          <article class="solution-card">
+          <article class="solution-card" data-image="assets/services/infraestructura-fisica.webp">
             <span class="card-number">05</span>
             <h3>Infraestructura física</h3>
             <p>Una base ordenada y confiable para sostener la operación tecnológica.</p>
             <ul><li>Cableado estructurado</li><li>Racks y gabinetes</li><li>Canalización</li></ul>
           </article>
-          <article class="solution-card">
+          <article class="solution-card" data-image="assets/services/servidores-soporte.webp">
             <span class="card-number">06</span>
             <h3>Servidores y soporte</h3>
             <p>Infraestructura, continuidad y acompañamiento para mantener la operación.</p>
             <ul><li>Servidores y almacenamiento</li><li>Respaldos</li><li>Soporte técnico</li></ul>
           </article>
-          <article class="solution-card">
+          <article class="solution-card" data-image="assets/services/control-acceso.webp">
             <span class="card-number">07</span>
             <h3>Control de acceso</h3>
             <p>Gestión de accesos peatonales y vehiculares de acuerdo con cada espacio.</p>
             <ul><li>Biometría</li><li>Intercomunicación</li><li>Gestión de usuarios</li></ul>
           </article>
-          <article class="solution-card">
+          <article class="solution-card" data-image="assets/services/fibra-optica.webp">
             <span class="card-number">08</span>
             <h3>Fibra óptica</h3>
             <p>Enlaces de alto desempeño para proyectos que necesitan velocidad y alcance.</p>
@@ -257,6 +257,22 @@
     </section>
   </main>
 
+  <dialog class="solution-dialog" id="solution-dialog" aria-labelledby="solution-dialog-title">
+    <button class="dialog-close" type="button" aria-label="Cerrar detalle">&times;</button>
+    <div class="dialog-layout">
+      <figure class="dialog-media">
+        <img id="solution-dialog-image" src="" alt="">
+        <figcaption>Imagen ilustrativa generada digitalmente. Se sustituirá por fotografía de proyecto autorizado.</figcaption>
+      </figure>
+      <div class="dialog-copy">
+        <p class="section-kicker">Solución GATEWAY MTY</p>
+        <h2 id="solution-dialog-title"></h2>
+        <p id="solution-dialog-description"></p>
+        <ul id="solution-dialog-list"></ul>
+        <a class="button" href="#cotizacion" id="solution-dialog-cta">Solicitar cotización</a>
+      </div>
+    </div>
+  </dialog>
   <footer class="site-footer" id="contacto">
     <div class="container footer-grid">
       <div>

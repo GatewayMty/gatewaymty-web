@@ -16,6 +16,51 @@ mainNav?.querySelectorAll("a").forEach((link) => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const solutionDialog = document.getElementById("solution-dialog");
+const solutionDialogImage = document.getElementById("solution-dialog-image");
+const solutionDialogTitle = document.getElementById("solution-dialog-title");
+const solutionDialogDescription = document.getElementById("solution-dialog-description");
+const solutionDialogList = document.getElementById("solution-dialog-list");
+const solutionDialogClose = solutionDialog?.querySelector(".dialog-close");
+const solutionDialogCta = document.getElementById("solution-dialog-cta");
+
+const openSolution = (card) => {
+  if (!solutionDialog) return;
+  const title = card.querySelector("h3")?.textContent.trim() || "Solución";
+  const description = card.querySelector("p")?.textContent.trim() || "";
+  const items = [...card.querySelectorAll("li")].map((item) => item.textContent.trim());
+  solutionDialogImage.src = card.dataset.image;
+  solutionDialogImage.alt = `Imagen ilustrativa de ${title.toLowerCase()}`;
+  solutionDialogTitle.textContent = title;
+  solutionDialogDescription.textContent = description;
+  solutionDialogList.replaceChildren(...items.map((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    return li;
+  }));
+  solutionDialog.showModal();
+};
+
+document.querySelectorAll(".solution-card").forEach((card) => {
+  const title = card.querySelector("h3")?.textContent.trim() || "esta solución";
+  card.tabIndex = 0;
+  card.setAttribute("role", "button");
+  card.setAttribute("aria-haspopup", "dialog");
+  card.setAttribute("aria-label", `Ver detalle de ${title}`);
+  card.addEventListener("click", () => openSolution(card));
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openSolution(card);
+    }
+  });
+});
+
+solutionDialogClose?.addEventListener("click", () => solutionDialog.close());
+solutionDialogCta?.addEventListener("click", () => solutionDialog.close());
+solutionDialog?.addEventListener("click", (event) => {
+  if (event.target === solutionDialog) solutionDialog.close();
+});
 const form = document.getElementById("quote-form");
 const result = document.getElementById("form-result");
 const emailLink = document.getElementById("email-result");
