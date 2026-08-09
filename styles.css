@@ -157,7 +157,7 @@ button, input, textarea { font: inherit; }
 .solutions-section { background: var(--paper); }
 .section-heading { display: grid; grid-template-columns: 1.2fr .8fr; gap: 60px; align-items: end; margin-bottom: 46px; }
 .section-heading > p { margin: 0; color: var(--muted); }
-.solutions-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.solutions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .solution-card {
   position: relative;
   min-height: 355px;
@@ -187,6 +187,7 @@ button, input, textarea { font: inherit; }
 .solution-card p { margin: 0; color: var(--muted); font-size: .94rem; }
 .solution-card ul { margin: 22px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); list-style: none; font-size: .84rem; color: var(--muted); }
 .solution-card li + li { margin-top: 6px; }
+.solution-card li:nth-child(n+4) { display: none; }
 
 
 .solution-dialog {
@@ -225,10 +226,11 @@ button, input, textarea { font: inherit; }
   cursor: pointer;
 }
 .sectors-section { background: var(--white); }
-.sectors-grid { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 50px; border-block: 1px solid var(--line); }
+.sectors-grid { display: grid; grid-template-columns: repeat(6, 1fr); margin-top: 50px; border-block: 1px solid var(--line); }
 .sectors-grid div { min-height: 145px; display: grid; place-content: center; gap: 12px; text-align: center; border-right: 1px solid var(--line); }
 .sectors-grid div:last-child { border-right: 0; }
 .sectors-grid span { color: var(--electric); font-family: var(--display); font-size: .75rem; letter-spacing: .15em; }
+.sectors-grid small { max-width: 150px; color: var(--muted); font-size: .76rem; line-height: 1.45; }
 
 .methodology-section { color: var(--white); background: var(--navy); }
 .section-kicker.light { color: var(--cyan); }
